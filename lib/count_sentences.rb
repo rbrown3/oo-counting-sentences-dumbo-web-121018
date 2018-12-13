@@ -28,5 +28,5 @@ end
 
   def count_sentences
     return self.gsub(/\W/, ' ').split.length
-end
+
 end
