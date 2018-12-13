@@ -27,6 +27,8 @@ end
   end
 
   def count_sentences
-    return self.gsub(/\W/, ' ').split.length
+  self.split(/\.|\?|\!/).delete_if {|w| w.size < 2}.size
+  binding.pry
 end
 end
+binding.pry
